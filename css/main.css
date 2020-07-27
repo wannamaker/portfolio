@@ -1,0 +1,270 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  position: relative;
+}
+
+#title {
+  display: none;
+}
+
+#logo {
+  border: 2px solid black;
+  border-radius: 100%;
+  font-size: 2rem;
+  padding: 5px;
+}
+
+.col-lg {
+  font-family: 'Playfair Display', serif;
+  width: 100%;
+  padding: 50% 0%;
+  background-color: black;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+#sub-heading {
+  font-size: 1rem;
+}
+
+.nav-item {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+#hamburger-bio {
+  padding: 5% 15%;
+  text-align: center;
+}
+
+#intro h2 {
+  font-size: 5rem;
+}
+
+#brand {
+  background-color: rgb(194,217,231);
+  color: #333333;
+  padding: 40% 10%;
+}
+
+#brand h4 {
+  font-size: 2rem;
+  line-height: 4.5rem;
+}
+
+.brand-question {
+  font-style: italic;
+}
+
+#projects-header,
+#design-header {
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px 0;
+  letter-spacing: 1px;
+  padding-top: 5%;
+}
+
+#projects,
+#projects-design {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  color: #333333;
+}
+
+#projects-design .github-link {
+  display: none;
+}
+
+.card-content p {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.card {
+  margin: 4% 2%;
+  width: 300px;
+  height: 434px;
+  align-items: center;
+  position: relative;
+}
+
+.card img {
+  background-size: cover;
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+
+.live-link,
+.github-link {
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: #FFFFFF;
+  margin: 1% 0;
+  align-self: center;
+}
+
+.live-link:hover,
+.github-link:hover {
+  background-color: papayawhip;
+  color: #000000;
+  border: 1px solid black;
+}
+
+.live-link {
+  margin-right: 1%;
+}
+
+#writing {
+  background-color: papayawhip;
+  color: #333333;
+  font-weight: 500;
+  line-height: 1rem;
+}
+
+#writing a,
+#resume-link {
+  color: rgb(0, 211, 83);
+}
+
+#writing a:hover,
+#resume-link:hover {
+  text-decoration: underline;
+}
+
+#writing h3 {
+  margin-bottom: 1rem;
+}
+
+#writing p {
+  font-size: 1.2rem;
+}
+
+#contact-form {
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+.form-group {
+  width: 85%;
+  margin: 2% 7%;
+}
+
+#submit-button {
+  margin-top: 1rem;
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
+}
+
+#submit-button:hover {
+  background-color: papayawhip;
+  color: #000000;
+  border: 1px solid black;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(248, 249, 250);
+  height: 54px;
+  margin: 145px 5px 5px 5px;
+  padding: 5px;
+}
+
+#social-links a {
+  color: #333333;
+  font-size: 2rem;
+  padding-right: 10px;
+}
+
+#copyright {
+  padding-top: 8px;
+}
+
+@media (min-width: 600px) {
+  .col-lg {
+      width: 100%;
+      padding: 14% 5%;
+  }
+  #title {
+      display: block;
+  }
+  #logo {
+      display: none;
+  }
+  #hamburger-bio {
+      display: none;
+  }
+  #contact-info {
+      display: flex;
+      justify-content: space-around;
+  }
+  #brand {
+      padding: 10%;
+  }
+  #projects,
+  #projects-design {
+      flex-wrap: wrap;
+  }
+  #projects-header,
+  #design-header {
+      font-size: 2.5rem;
+  }
+  #projects-header {
+      text-align: left;
+      margin-left: 104px;
+  }
+  #design-header {
+      text-align: right;
+      margin-right: 104px;
+  }
+  .card-body {
+      padding: 1.25rem;
+  }
+  #contact-details,
+  form {
+      width: 50%;
+  }
+  #contact-details {
+      font-size: 1.35rem;
+      padding-top: 6%;
+  }
+  form {
+      padding: 0px;
+  }
+  #contact-or {
+      display: none;
+  }
+}
+
+@media (min-width: 660px) {
+  #intro {
+      height: 500px;
+      padding: 32% 5%;
+  }
+}
+
+@media (min-width: 900px) {
+  #intro {
+      padding: 26% 0%;
+  }
+  #contact-form {
+      padding-top: 8% 5% 0% 5%;
+  }
+}
