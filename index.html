@@ -102,7 +102,7 @@
         >
           <div class="navbar-nav nav">
             <a href="#brand" class="nav-item nav-link">About</a>
-            <a href="#projects-header" class="nav-item nav-link active"
+            <a href="#proj-header" class="nav-item nav-link active"
               >Projects</a
             >
             <!-- <a href="#writing" class="nav-item nav-link">Writing</a> -->
@@ -141,18 +141,19 @@
           </div>
          
           <div id="intro" class="col1-lg text-center">
-          <h2>Hey!<br /> <br />Welcome to my page, I'm a Software Engineer trained in Full-Stack Web Development, I 'm willing to take on any project because solving problems with programming is fun, then this will allow me to grow my skill set</h2>
+          <p class="text-intro">Hey!<br /> Welcome to my page, I'm a Software Engineer trained in Full-Stack Web Development, I 'm willing to take on any project because solving problems with programming is fun, then this will allow me to grow my skill set</p>
           </div>
         
         </div>
       </div>
 
       <div class="row">
-       <div class="contact-container">
-          <div id="brand" class="colo-lg text-center">
-          
+       <div class="contact-container" id="brand">
+          <!-- <div id="brand" class="colo-lg text-center"> -->
+
+        <div class="text-block">
           <div class="left-about text-center">
-              <p>
+              <p class="left-about-text">
                 I have a background in IT infrastructure implementation and user/client support. I leverage skills in project analysis, planning, implementation, and problem-solving, even at a fast pace and under pressure. Able to quickly adapt and learn new concepts on the fly and contribute, while meticulously apply best practices and determined to meet deadlines
               </p>
           </div>
@@ -168,68 +169,73 @@
                     <li>AWS EC2, AWS Lambda, Linux, Windows Server, Azure management, Heroku, Netlify, Microservices, VMware</li>
                   </ul>
           </div>
-       
         </div>
-
-        <div class="contact-logos">
-              <div class="contact-linkedin">
-                     <a href="https://www.linkedin.com/in/wannamaker-charles-5718a41b0/" target="_blank">
-                       <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
+          <div class="contact-logos">
+            <div class="contact-linkedin">
+                   <a href="https://www.linkedin.com/in/wannamaker-charles-5718a41b0/" target="_blank">
+                     <i class="fab fa-linkedin fa-3x linkedin-log" aria-hidden="true"></i>
+                    </a>
+            </div>
+            <div class="contact-github">
+                    <a href="https://github.com/wannamaker" target="_blank">
+                       <i class="fab fa-github fa-3x github-log" aria-hidden="true"></i>
                       </a>
-              </div>
-              <div class="contact-github">
-                      <a href="https://github.com/wannamaker" target="_blank">
-                         <i class="fab fa-github fa-3x" aria-hidden="true"></i>
-                        </a>
-              </div>
-              <div class="contact-resume">
-                <a href="https://drive.google.com/file/d/1X9c5ArmtFt_AQP9mYee6Vf5IhJCepWIN/view?usp=sharing" target="_blank"
-                >
-                  <i class="far fa-file fa-3x"></i>
-                 </a>
-              </div>
-              <div class="contact-mail">
-                <a class="linkOut email" href="mailto:wannamaker.charles@outlook.com" rel="noopener noreferrer">
-                  <i class="far fa-envelope fa-3x"></i>
-                 </a>
-              </div>
-        </div>
+            </div>
+            <div class="contact-resume">
+              <a href="https://drive.google.com/file/d/1X9c5ArmtFt_AQP9mYee6Vf5IhJCepWIN/view?usp=sharing" target="_blank"
+              >
+                <i class="far fa-file fa-3x"></i>
+               </a>
+            </div>
+            <div class="contact-mail">
+              <a class="linkOut email" href="mailto:wannamaker.charles@outlook.com" rel="noopener noreferrer">
+                <i class="far fa-envelope fa-3x"></i>
+               </a>
+            </div>
+      </div>
+
+        <!-- </div> -->
 
        </div>
         
       </div>
 
-      <h3 id="projects-header">A few projects I have been working on lately:</h3>
-
-      <div id="projects">
-        <!-- PROJECT CARDS IMPORTED FROM JS -->
-        <div class="card">
-          <img
-            src="https://res.cloudinary.com/wannamaker/image/upload/v1595655609/NewBay_srybfm.png"
-            class="card-img-top"
-          />
-          <div class="card-body">
-            <h5 class="card-title">NewBay</h5>
-            <p class="card-text">
-              Full Stack e-commerce website built with React, Ruby on Rails and a unique,
-              RESTful API built by me.
-            </p>
-            <a
-              class="btn btn-primary live-link"
-              href="http://newbay-show.surge.sh/"
-              target="_blank"
-              ><i class="fas fa-cogs"></i></a
-            ><a
-              href="https://github.com/wannamaker/Newbay"
-              target="_blank"
-              class="btn btn-primary github-link"
-              ><i class="fab fa-github" aria-hidden="true"></i
-                ></a
-            >
+      <div class="row">
+         <div id="proj-header">
+           <h3 id="projects-header">A few projects I have been working on lately</h3>
           </div>
-        </div>
-        <div class="card">
-          <img
+        <div id="projects">
+              <!-- PROJECT CARDS IMPORTED FROM JS -->
+             <div class="card">
+                <img
+                 src="https://res.cloudinary.com/wannamaker/image/upload/v1595655609/NewBay_srybfm.png"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">NewBay</h5>
+                    <p class="card-text">
+                     Full Stack e-commerce website built with React, Ruby on Rails and a unique,
+                      RESTful API built by me.
+                    </p>
+                      <div class="project-buttons">
+                        <a
+                         class="btn btn-primary live-link"
+                          href="http://newbay-show.surge.sh/"
+                          target="_blank"
+                          ><i class="fas fa-cogs"></i></a
+                        ><a
+                          href="https://github.com/wannamaker/Newbay"
+                            target="_blank"
+                               class="btn btn-primary github-link"
+                            ><i class="fab fa-github" aria-hidden="true"></i
+                        ></a
+                        >
+                      </div>
+                </div>
+              </div>
+               
+              <div class="card">
+                <img
             src="https://res.cloudinary.com/wannamaker/image/upload/v1595655591/NYC_Hospitals_Satisfaction_Survey_cto5jd.png"
             class="card-img-top"
           />
@@ -239,18 +245,20 @@
               A simple vanilla JavaScript site that uses the NYC Public Open Data API to display
               the results of an NYC Hospitals Satisfaction Survey.
             </p>
-            <a
+            <div class="project-buttons">
+             <a
               class="btn btn-primary live-link"
               href="https://dreamy-wescoff-45dedc.netlify.app/"
               target="_blank"
               ><i class="fas fa-cogs"></i></a
-            ><a
+             ><a
               href="https://github.com/wannamaker/NYC-HHC-Patient-Satisfaction-Insight"
               target="_blank"
               class="btn btn-primary github-link"
-              ><i class="fab fa-github" aria-hidden="true"></i
+               ><i class="fab fa-github" aria-hidden="true"></i
                 ></a
-            >
+             >
+            </div>
           </div>
         </div>
         <div class="card">
@@ -264,18 +272,20 @@
               A collaboration with a UX Researchers team and us Software Engineers where we built a MERN stack recipe
               management app
             </p>
-            <a
+            <div class="project-buttons">
+             <a
               class="btn btn-primary live-link"
               href="http://tan-wrench.surge.sh/"
               target="_blank"
               ><i class="fas fa-cogs"></i></a
-            ><a
+             ><a
               href="https://github.com/wannamaker/yummy-dish"
               target="_blank"
               class="btn btn-primary github-link"
               ><i class="fab fa-github" aria-hidden="true"></i
                 ></a
-            >
+             >
+            </div>
           </div>
         </div>
         <div class="card">
@@ -289,62 +299,27 @@
               Traveluation is an hotel cost evaluation app built on a React front end,
               the Travelpayouts Data, and the Google Map RESTful APIs
             </p>
-            <a
+            <div class="project-buttons">
+             <a
               class="btn btn-primary live-link"
               href="https://stoic-carson-d4a6a2.netlify.app/"
               target="_blank"
-              ><i class="fas fa-cogs"></i></a
-            ><a
+              >
+              <i class="fas fa-cogs" aria-hidden="true"></i>
+             </a>
+             <a
               href="https://github.com/wannamaker/Traveluation"
               target="_blank"
               class="btn btn-primary github-link"
-              ><i class="fab fa-github" aria-hidden="true"></i
-                ></a
-            >
+              >
+              <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <!-- <div class="card">
-          <img
-            src="#"
-            class="card-img-top"
-          />
-          <div class="card-body">
-            <h5 class="card-title">My Portfolio</h5>
-            <p class="card-text">
-              Look familiar? I built this site using HTML, CSS/Bootstrap,
-              vanilla JavaScript and Google Sheets's API.
-            </p>
-            <a
-              class="btn btn-primary live-link"
-              href="#/"
-              target="_blank"
-              >See the app</a
-            ><a
-              href="#"
-              target="_blank"
-              class="btn btn-primary github-link"
-              >See the code</a
-            >
-          </div>
-        </div>
-      </div> -->
-
-      <!-- <div class="row">
-        <div id="writing" class="col-lg text-center">
-          <h3>Sometimes I Write</h3>
-          <p>
-            Read what I have to say
-            <a
-              id="medium-link"
-              href="#"
-              target="_blank"
-              >here</a
-            >.
-          </p>
-        </div>
-      </div> -->
-
-      <div class="row-test">
+       </div>
+      </div>
+      <div class="row">
         <div id="contact-form" >
           <!-- <div id="contact-form" class="colo-lg text-center"> -->
           <h3 class="invitation">Let's stay in touch!</h3>
@@ -387,14 +362,16 @@
                   placeholder="Message"
                 ></textarea>
               </div>
-              <button
+              <div class="form-button">
+               <button
                 id="submit-button"
                 type="submit"
                 class="btn btn-primary"
                 value="Send"
-              >
+               >
                 Submit
-              </button>
+               </button>
+              </div>
             </form>
           </div>
         </div>
